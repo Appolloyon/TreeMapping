@@ -2,7 +2,7 @@
 
 class BinaryTree:
     def __init__(self, root):
-        self.key = root
+        self.name = root
         self.left_child = None
         self.right_child = None
         self.val_dict = {}
@@ -38,8 +38,8 @@ class BinaryTree:
     def add_val(self,k,v):
         self.val_dict[k] = v
 
-    #def set_rootval(self, obj):
-    #    self.key = obj
+    def set_name(self, name):
+        self.name = name
 
     #def get_rootval(self):
     #    return self.key
