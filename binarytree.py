@@ -5,6 +5,7 @@ class BinaryTree:
         self.key = root
         self.left_child = None
         self.right_child = None
+        self.val_dict = {}
 
     def insert_left(self, new_node):
         if self.left_child == None:
@@ -28,9 +29,18 @@ class BinaryTree:
     def get_left_child(self):
         return self.left_child
 
-    def set_rootval(self, obj):
-        self.key = obj
+    def check_val(self,k):
+        return k in self.val_dict.keys()
 
-    def get_rootval(self):
-        return self.key
+    def get_val(self,k):
+        return self.val_dict[k]
+
+    def add_val(self,k,v):
+        self.val_dict[k] = v
+
+    #def set_rootval(self, obj):
+    #    self.key = obj
+
+    #def get_rootval(self):
+    #    return self.key
 
